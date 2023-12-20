@@ -4,6 +4,15 @@ In Java, printf is a method used for formatted output. It is part of the PrintSt
 
 `printf(format, arguments);`
 
+`%[index][flags][width][.precision]conversion-character`
+
+
+![printf.png](images%2Fprintf.png)
+
+## output:
+
+`' 42.54'`
+
 format is the fortmatted string, arguments are the values that are provided to the formatted string.
 ## placeholder %
 
