@@ -1,3 +1,4 @@
+import java.util.Date;
 import java.util.Locale;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -14,5 +15,44 @@ public class Main {
         System.out.printf(locale, format, arguments);
 
 //        %[flags][width][.precision]conversion-character
+
+        System.out.printf("'%-10s' %n", "foobar");    //left justify, 10 character string, in single quotes
+        System.out.printf("'%10s' %n", "foobar");    //             , 10 character string, in single quotes
+        System.out.printf("'%10S' %n", "foobar");    //             , 10 character string, in single quotes, capitals
+
+        int intValue = 128;
+        double doubleValue = 3.141592;
+        String stringValue = "foo";
+
+        // Using %d for integer, %f for floating-point, %s for string
+        System.out.printf("Integer: %d, Floating-point: %.3f, String: %s%n", intValue, doubleValue, stringValue);
+
+        Car car = new Car();
+        car.setAutomatic(true);
+        car.setFuel("Electric");
+        car.setName("BobCar");
+        car.setNumberWheels(5);
+
+        System.out.printf("Car String: %s%n", car);
+
+        double amount = 2456220.156;
+        printfLocaleAmount(Locale.UK, amount);
+        printfLocaleAmount(Locale.FRANCE, amount);
+        printfLocaleAmount(Locale.GERMANY, amount);
+        printfLocaleAmount(Locale.ITALY, amount);
+
+        Date date = new Date();
+        printfLocaleDate(Locale.UK,date);
+        printfLocaleDate(Locale.FRANCE,date);
+        printfLocaleDate(Locale.GERMANY,date);
+        printfLocaleDate(Locale.ITALY,date);
+    }
+
+    private static void printfLocaleDate(Locale locale, Date date) {
+        System.out.printf(locale, "locale date in %s is %tc%n", locale.getCountry(), date);
+    }
+
+    private static void printfLocaleAmount(Locale locale, double amount) {
+        System.out.printf(locale, "locale amount in %s is %,.2f%n", locale.getCountry(), amount);
     }
 }
