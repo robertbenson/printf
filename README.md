@@ -7,6 +7,10 @@ In Java, printf is a method used for formatted output. It is part of the PrintSt
 format is the fortmatted string, arguments are the values that are provided to the formatted string.
 ## placeholder %
 
+`%n` is the same as `\n`, ie newline
+
+
+
 In the printf function, the `%` character is used as a format specifier to indicate where and how to insert values into the formatted string
 
 e.g. `"Hello %s %s";`   has two placeholders, that are strings.
@@ -45,7 +49,7 @@ e.g. `"Hello %s %s";`   has two placeholders, that are strings.
 
 #### index 
 
-specify explicitly index which placeholder to use for argument:
+specify explicitly, using an index, which argument to use with placeholder:
 ```
 System.out.printf("%3$d  %4$d  %2$d  %1$d\n", 1,  2,  3,  4);     //3,4,2,1
 System.out.printf("%4$d  %3$d  %1$d  %2$d\n", 1,  2,  3,  4);     //4,3,1,2
