@@ -26,6 +26,9 @@ public class Main {
 
         // Using %d for integer, %f for floating-point, %s for string
         System.out.printf("Integer: %d, Floating-point: %.3f, String: %s%n", intValue, doubleValue, stringValue);
+        System.out.printf("%3$d  %4$d  %2$d  %1$d\n", 1,  2,  3,  4);
+        System.out.printf("%4$d  %3$d  %1$d  %2$d\n", 1,  2,  3,  4);
+
 
         Car car = new Car();
         car.setAutomatic(true);
@@ -46,6 +49,20 @@ public class Main {
         printfLocaleDate(Locale.FRANCE,date);
         printfLocaleDate(Locale.GERMANY,date);
         printfLocaleDate(Locale.ITALY,date);
+        
+        printfFlags();
+    }
+
+    private static void printfFlags() {
+        Integer number = 45;
+        System.out.printf("Flags number  %d, right justified %6d%n", number, number);
+        System.out.printf("Flags number  %d, +left justified %+d%n", number, number);
+        System.out.printf("Flags number  %d, leading zeroes  %06d%n", number, number);
+        Integer numberNegative = -45;
+        System.out.printf("Flags number %d, negative        %(6d%n", numberNegative,numberNegative);
+        System.out.printf("Flags number  %d, hexadecimal     %#x\n", number,number);
+        System.out.printf("Flags number  %d, hexadecimal     %06X%n\n", number,number);
+
     }
 
     private static void printfLocaleDate(Locale locale, Date date) {
