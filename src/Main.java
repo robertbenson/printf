@@ -16,9 +16,10 @@ public class Main {
 
 //        %[flags][width][.precision]conversion-character
 
-        System.out.printf("'%-10s' %n", "foobar");    //left justify, 10 character string, in single quotes
-        System.out.printf("'%10s' %n", "foobar");    //             , 10 character string, in single quotes
-        System.out.printf("'%10S' %n", "foobar");    //             , 10 character string, in single quotes, capitals
+        System.out.printf("'%s' %n", "foobar");         //                                    in single quotes
+        System.out.printf("'%-10s' %n", "foobar");      //left justify , 10 character string, in single quotes
+        System.out.printf("'%10s' %n", "foobar");       //right justify, 10 character string, in single quotes
+        System.out.printf("'%10S' %n", "foobar");       //             , 10 character string, in single quotes, CAPITALS
 
         int intValue = 128;
         double doubleValue = 3.141592;
