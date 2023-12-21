@@ -50,6 +50,9 @@ public class Main {
         printfLocaleDate(Locale.FRANCE,date);
         printfLocaleDate(Locale.GERMANY,date);
         printfLocaleDate(Locale.ITALY,date);
+
+        System.out.printf("%1$tA, %1$tB %1$tY %n", date);    //one argument, use in 3 placeholders
+        System.out.printf("%1$td.%1$tm.%1$ty , day of year: %1$tj%n%n", date);
         
         printfFlags();
     }

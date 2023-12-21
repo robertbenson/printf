@@ -1,5 +1,10 @@
 # printf using Java
 
+## Quick Introduction - 5 minute guide
+
+This is not by any means a comprehensive list of what printf can do. It is just a quick reference to the most used functions for my use cases.
+Refer to your preferred Java reference guide for a full overview of printf.
+
 In Java, printf is a method used for formatted output. It is part of the PrintStream class and is typically used to format and print data to the console. The printf method allows you to specify a format string, which can include placeholders for different data types (e.g., integers, floating-point numbers, strings), you provide the values to be inserted into the placeholders.
 
 `printf(format, arguments);`
