@@ -16,10 +16,10 @@ format is the fortmatted string, arguments are the values that are provided to t
 ## Conversion Characters:  
     d : decimal integer   [byte, short, int, long] 
     f : floating-point number    [float, double] 
-    c : character Capital C will uppercase the letter  
-    s : String  Capital S will uppercase all the letters in the string  
+    c : character Capital C will make uppercase
+    s : String  Capital S will make uppercase
     h : hashcode   
-    n : use %n instead of \n for greater compatibility
+    n : use %n instead of \n
 
 ![java_printf.png](images%2Fjava_printf.png)
 
