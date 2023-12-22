@@ -14,12 +14,18 @@ format is the fortmatted string, arguments are the values that are provided to t
 `%[index][flags][width][.precision]conversion-character`
 
 ## Conversion Characters:  
+
+Conversion characters are used to specify the type of data that will be inserted into the formatted string.
+
+    b : Boolean value.
+    B : Boolean value, uppercase.
     d : decimal integer   [byte, short, int, long] 
     f : floating-point number    [float, double] 
     c : character Capital C will make uppercase
     s : String  Capital S will make uppercase
     h : hashcode   
     n : use %n instead of \n
+
 
 ![java_printf.png](images%2Fjava_printf.png)
 
