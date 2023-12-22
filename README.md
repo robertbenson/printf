@@ -13,8 +13,15 @@ format is the fortmatted string, arguments are the values that are provided to t
 
 `%[index][flags][width][.precision]conversion-character`
 
+## Conversion Characters:  
+    d : decimal integer   [byte, short, int, long] 
+    f : floating-point number    [float, double] 
+    c : character Capital C will uppercase the letter  
+    s : String  Capital S will uppercase all the letters in the string  
+    h : hashcode   
+    n : use %n instead of \n for greater compatibility
 
-![printf.png](images%2Fprintf.png)
+![java_printf.png](images%2Fjava_printf.png)
 
 ### output:
 
@@ -138,3 +145,8 @@ locale date in IT is mer dic 20 10:54:27 GMT 2023
 ## flags
 
 Flags are used within the format string to modify the output format.
+
+    - left-justify ( default is right-justify )  
+    + output a plus (+) or minus (-) sign for numerics
+    0 forces numerical values to be zero-padded otherwise blank padded
+    , comma grouping separator for numbers > 1000   
